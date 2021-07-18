@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Switch Effect</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Turn the light on or off by clicking on the bulb</h1>
+
+    <img onclick="bulbSwitch();" width="350" height="470" style="margin-left: 450px; margin-top: 30px;" src="lightoff.webp" alt="" id="lightbulb">
+
+    <script>
+        function bulbSwitch(){
+            var bulb = document.getElementById("lightbulb");
+            if(bulb.src.match("lighton")){
+                bulb.src ="lightoff.webp";
+            }else{
+                bulb.src = "lighton.webp"
+            }
+        }
+    </script>
+    
+</body>
+</html>
